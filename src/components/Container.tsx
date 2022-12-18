@@ -1,11 +1,11 @@
 import { DotList } from './DotList';
-import { FormContainer } from './FormContainer';
+import { Step1FormContainer } from './Step1FormContainer';
 
 export function Container () {
     return (
         <div className='container'>
             <DotList selected={1} />
-            <FormContainer />
+            <Step1FormContainer />
         </div>
     );
 }

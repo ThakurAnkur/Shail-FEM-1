@@ -1,4 +1,4 @@
-export const FormContainer = () => {
+export const Step1FormContainer = () => {
     return (
         <div className='form-container'>
             <h2>Personal info</h2>
