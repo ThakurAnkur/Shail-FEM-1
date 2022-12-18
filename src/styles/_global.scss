@@ -1,0 +1,82 @@
+*,
+ ::after,
+ ::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: cRems($base-font-size);
+  background: $Magnolia;
+  @include medium {
+    padding-top: cRems(32px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+}
+
+#root {
+  @include medium {
+    padding: 0 cRems(32px);
+  }
+}
+
+form,
+button,
+body {
+  font-family: $font-family;
+}
+
+h2 {
+  color: $MarineBlue;
+  font-size: cRems(22px);
+  line-height: normal;
+  font-weight: $bold;
+  margin: 0 0 cRems(20px);
+}
+
+p {
+  color: $CoolGray;
+  font-size: cRems(16px);
+  line-height: 1.43;
+  margin: 0 0 cRems(24px);
+}
+
+label {
+  display: block;
+  color: $MarineBlue;
+  margin: 0 0 cRems(5px);
+}
+
+.form-control {
+  display: block;
+  margin: 0 0 1.125rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+input {
+  color: $MarineBlue;
+  display: block;
+  width: 100%;
+  font-size: cRems(16px);
+  padding: cRems(8px) cRems(16px);
+  border: 1px solid $CoolGray;
+  border-radius: cRems(4px);
+  font-weight: $bold;
+
+  &::placeholder {
+    color: $CoolGray;
+  }
+}
+
+button {
+  background: $MarineBlue;
+  color: $White;
+  border-radius: cRems(4px);
+  font-size: cRems(14px);
+  padding: .72em 1em;
+  cursor: pointer;
+}

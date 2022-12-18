@@ -1,0 +1,77 @@
+.dot-list {
+    margin-bottom: cRems(32px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include medium {
+        margin-bottom: 0;
+        display: block;
+        max-width: cRems(275px);
+        width: 100%;
+        background: url('../assets/bg-sidebar-desktop.svg') no-repeat top center/100%;
+        min-height: cRems(570px);
+        padding: cRems(42px) cRems(32px);
+    }
+
+    li {
+        margin-right: cRems(16px);
+
+        @include medium {
+         margin: 0 0 cRems(32px);
+         display: flex;
+        }
+        &:last-of-type {
+            margin-right: 0;
+            @include medium {
+                margin-bottom: 0;
+            }
+        }
+
+       .no {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $White;
+        border-radius: 100%;
+        border: 1px solid;
+        font-size: cRems(16px);
+        width: cRems(38px);
+        height: cRems(38px);
+        text-align: center;
+        @include medium {
+            margin-right: cRems(16px);
+        }
+       }
+
+
+        &.active {
+            .no {
+                background: $LightBlue;
+                color: $MarineBlue;
+            }
+        }
+
+        .info {
+            display: none;
+            @include medium {
+                display: block;
+            }
+        }
+
+        .step {
+            font-size: cRems(14px);
+            font-weight: $regular;
+            color: $CoolGray;
+            display: block;
+            margin-bottom: cRems(6px);
+            text-transform: uppercase;
+        }
+        .title {
+            font-weight: $regular;
+            color: $White;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+    }
+}

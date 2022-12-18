@@ -1,0 +1,20 @@
+.container {
+    background-image: url('../assets/bg-sidebar-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-width: cRems(940px);
+    width: 100%;
+    min-height: cRems(300px);
+    margin: 0 auto;
+    padding: cRems(32px) 0;
+
+    @include medium {
+        position: relative;
+        background-color: $White;
+        background-image: none;
+        display: flex;
+        align-items: stretch;
+        padding: cRems(16px);
+        border-radius: cRems(12px);
+    }
+}
